@@ -3,7 +3,6 @@ let mix = require('laravel-mix');
 
 mix.ts('src/app.tsx', 'dist/')
     .extract([ 'react', 'react-dom', 'react-bootstrap', 'lodash' ])
-    .copy('src/index.html', 'dist/')
     .sourceMaps()
     .disableNotifications();
 
