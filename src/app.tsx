@@ -2,18 +2,27 @@ import { React, ReactDOM, _} from './global';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Navigation } from './view/navigation';
 
-let target: {
-    url?: string
-} = {};
+let targetUrl = 'https://olian04.github.io/RockPaperTracer/';
 
 ReactDOM.render(
     (
         <div>
-            <Navigation target={target} style={{
+            <Navigation onNavigate={url => {
+                targetUrl = url;
+            }} style={{
                 padding: 0,
                 margin: 0
             }} />
-            <iframe src='https://github.com/Olian04/olian04.github.io' ></iframe>
+            <iframe src={targetUrl} style={{
+                position: 'relative',
+                left: 0,
+                top: 0,
+                padding: 0,
+                margin: 0,
+                border: 'none',
+                width: '99.5vw',
+                height: '100vh' 
+            }}></iframe>
         </div>
     ),
     document.getElementById('root')

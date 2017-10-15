@@ -39,5 +39,6 @@
     "type": "git",
     "url": "git@github.com:Olian04/olian04.github.io.git"
   },
-  "author": "Olian04"
+  "author": "Olian04",
+  "dependencies": {}
 }
