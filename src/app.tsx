@@ -20,8 +20,8 @@ ReactDOM.render(
                 padding: 0,
                 margin: 0,
                 border: 'none',
-                width: '99.5vw',
-                height: '100vh' 
+                width: '100%',
+                height: '94.6666666vh' 
             }}></iframe>
         </div>
     ),
