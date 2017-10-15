@@ -1,8 +1,20 @@
-import { React, ReactDOM, _, b } from './global';
+import { React, ReactDOM, _} from './global';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navigation } from './view/navigation';
+
+let target: {
+    url?: string
+} = {};
 
 ReactDOM.render(
     (
-        <b.Button>Click me!</b.Button>
+        <div>
+            <Navigation target={target} style={{
+                padding: 0,
+                margin: 0
+            }} />
+            <iframe src='https://github.com/Olian04/olian04.github.io' ></iframe>
+        </div>
     ),
     document.getElementById('root')
 );
