@@ -16,6 +16,7 @@ export class Navigation extends React.Component<IProps> {
                 </Navbar.Brand>
                 </Navbar.Header>
                 <Nav>
+                <NavItem eventKey={0} href="https://olian04.github.io/TheMatrix.html">The Matrix</NavItem>                    
                 <NavItem eventKey={1} href="https://olian04.github.io/RockPaperTracer/">Rock Paper Trace</NavItem>
                 <NavItem eventKey={2} href="https://olian04.github.io/Turing.js/">Turing.js</NavItem>
                 <NavItem eventKey={3} href="https://pypi.python.org/pypi/peekiter" >PyPeekIter</NavItem>
